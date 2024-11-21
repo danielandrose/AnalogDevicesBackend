@@ -37,6 +37,9 @@ app.get("/", (req, res) => {
                     font-size: 18px;
                     color: #333;
                 }
+                ul{
+                    list-style: none;
+                }
             </style>
         </head>
         <body>
