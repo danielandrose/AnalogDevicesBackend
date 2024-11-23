@@ -2,10 +2,12 @@ import express from 'express'
 import temperatureRoutes from './routes/temperature.route.js'
 import tyrePressureRoutes from './routes/tyre-pressure.route.js'
 import connectDB from './lib/db.js';
+import cors from 'cors'
 
 const app = express();
 const PORT = 3000
 
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
