@@ -62,7 +62,7 @@ app.get("/", (req, res) => {
 });
 
 
-app.use('/temperature', temperatureRoutes)
+app.use('/batteryPercentage', temperatureRoutes)
 app.use('/tyre-pressure', tyrePressureRoutes)
 
 app.listen(PORT, () => {
